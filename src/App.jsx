@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Users, Building2, Phone, Mail, Calendar, Clock, CheckCircle2, AlertCircle, Plus, Search, Bell, BarChart3, ArrowRight, MessageSquare, FileText, Send, X, ChevronDown, GripVertical, Sparkles, TrendingUp, Target, Handshake, Edit2, Trash2, Filter, MoreVertical } from 'lucide-react';
+import { Users, Building2, Phone, Mail, Calendar, Clock, CheckCircle2, AlertCircle, Plus, Search, Bell, BarChart3, ArrowRight, MessageSquare, FileText, Send, X, ChevronDown, GripVertical, Sparkles, TrendingUp, Target, HeartHandshake, Edit2, Trash2, Filter, MoreVertical } from 'lucide-react';
 
 // Sample data for demonstration
 const initialPartners = [
@@ -92,7 +92,7 @@ const stages = [
   { id: 'lead', name: 'New Lead', color: 'from-slate-400 to-slate-500', icon: Target },
   { id: 'conversation', name: 'In Conversation', color: 'from-blue-400 to-blue-500', icon: MessageSquare },
   { id: 'proposal', name: 'Proposal Sent', color: 'from-amber-400 to-amber-500', icon: FileText },
-  { id: 'negotiation', name: 'Negotiation', color: 'from-purple-400 to-purple-500', icon: Handshake },
+  { id: 'negotiation', name: 'Negotiation', color: 'from-purple-400 to-purple-500', icon: HeartHandshake },
   { id: 'closed', name: 'Partnership Won', color: 'from-emerald-400 to-emerald-500', icon: CheckCircle2 }
 ];
 
@@ -200,7 +200,7 @@ export default function NavGurukulCRM() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center shadow-lg shadow-orange-500/30">
-                <Handshake className="w-4 h-4 text-white" />
+                <HeartHandshake className="w-4 h-4 text-white" />
               </div>
               <div>
                 <h1 className="text-lg font-bold text-slate-800">NavGurukul Partners</h1>
